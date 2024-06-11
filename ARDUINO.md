@@ -28,29 +28,8 @@ This capacitor is used in SMD designs due to the high level of capacitance and l
 The first method is to include µF values whereas another method is to utilize code. In the first method, when the capacitor is marked with 33 and indicated with 6v then the value of the capacitor is 33 µF and the voltage used is 6V.
 
 ![[Pasted image 20240501074653.png]]
-
-
-
-
-
-
-
-Arduino Architecture
-Arduino’s processor basically uses the Harvard architecture where the program code and program data have separate memory. It consists of two memories- Program memory and the data memory. The code is stored in the flash program memory, whereas the data is stored in the data memory. The Atmega328 has 32 KB of flash memory for storing code (of which 0.5 KB is used for the bootloader), 2 KB of SRAM and 1 KB of EEPROM and operates with a clock speed of 16MHz.
-![Arduino Architecture](https://www.elprocus.com/wp-content/uploads/2013/08/2.jpg)
-Arduino Uno consists of 14 digital input/output pins (of which 6 can be used as PWM outputs), 6 analog inputs, a 16 MHz crystal oscillator, a USB connection, a power jack, an ICSP header, and a reset button
-
-Power Jack:  Arduino can be power either from the pc through a USB or through external source like adaptor or a battery. It can operate on a external supply of 7 to 12V. Power can be applied externally through the pin Vin or by giving voltage reference through the IORef pin.
-
-Digital Inputs: It consists of 14 digital inputs/output pins, each of which provide or take up 40mA current. Some of them have special functions like pins 0 and 1, which act as Rx and Tx respectively , for serial communication, pins 2 and 3-which are external interrupts, pins 3,5,6,9,11 which provides pwm output and pin 13 where LED is connected.
-
-Analog inputs: It has 6 analog input/output pins, each providing a resolution of 10 bits.
-ARef: It provides reference to the analog inputs
-Reset: It resets the microcontroller when low
-
-
 ## OSCILLATOR ##
-An **oscillator** is a circuit that creates a continuous, alternating waveform from a DC source without any external input. It converts a one-way current into an alternating waveform at a frequency determined by its components.
+An oscillator is a circuit that creates a continuous, alternating waveform from a DC source without any external input. It converts a one-way current into an alternating waveform at a frequency determined by its components.
  CRYSTAL OSCILLATOR
   A crystal oscillator is an electronic oscillator circuit that uses a piezoelectric crystal as a frequency-selective element. A crystal oscillator relies on the slight change in shape of a quartz crystal under an electric field, a property known as inverse piezoelectricity. A voltage applied to the electrodes on the crystal causes it to change shape; when the voltage is removed, the crystal generates a small voltage as it elastically returns to its original shape. The quartz oscillates at a stable resonant frequency, behaving like an RLC circuit, but with a much higher Q factor (less energy loss on each cycle of oscillation). Once a quartz crystal is adjusted to a particular frequency (which is affected by the mass of electrodes attached to the crystal, the orientation of the crystal, temperature and other factors), it maintains that frequency with high stability.
   The Arduino uses a crystal frequency of 16Mhz.
